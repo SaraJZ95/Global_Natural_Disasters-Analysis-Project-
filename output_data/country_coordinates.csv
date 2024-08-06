@@ -1,0 +1,229 @@
+country_coordinates,Country,Dis No
+Southern Asia,Asia,Afghanistan,200
+Southern Europe,Europe,Albania,36
+Northern Africa,Africa,Algeria,77
+Polynesia,Oceania,American Samoa,5
+Middle Africa,Africa,Angola,74
+Caribbean,Americas,Anguilla,6
+Caribbean,Americas,Antigua and Barbuda,10
+South America,Americas,Argentina,119
+Western Asia,Asia,Armenia,11
+Australia and New Zealand,Oceania,Australia,240
+Western Europe,Europe,Austria,50
+Western Asia,Asia,Azerbaijan,15
+Southern Europe,Europe,Azores Islands,4
+Caribbean,Americas,Bahamas (the),20
+Western Asia,Asia,Bahrain,1
+Southern Asia,Asia,Bangladesh,317
+Caribbean,Americas,Barbados,12
+Eastern Europe,Europe,Belarus,14
+Western Europe,Europe,Belgium,61
+Central America,Americas,Belize,19
+Western Africa,Africa,Benin,51
+Northern America,Americas,Bermuda,5
+Southern Asia,Asia,Bhutan,12
+South America,Americas,Bolivia (Plurinational State of),96
+Southern Europe,Europe,Bosnia and Herzegovina,26
+Southern Africa,Africa,Botswana,21
+South America,Americas,Brazil,227
+South-Eastern Asia,Asia,Brunei Darussalam,1
+Eastern Europe,Europe,Bulgaria,48
+Western Africa,Africa,Burkina Faso,59
+Eastern Africa,Africa,Burundi,62
+Western Africa,Africa,Cabo Verde,15
+South-Eastern Asia,Asia,Cambodia,42
+Middle Africa,Africa,Cameroon,54
+Northern America,Americas,Canada,121
+Southern Europe,Europe,Canary Is,7
+Caribbean,Americas,Cayman Islands (the),7
+Middle Africa,Africa,Central African Republic,44
+Middle Africa,Africa,Chad,60
+South America,Americas,Chile,97
+Eastern Asia,Asia,China,906
+South America,Americas,Colombia,188
+Eastern Africa,Africa,Comoros (the),23
+Middle Africa,Africa,Congo (the Democratic Republic of the),138
+Middle Africa,Africa,Congo (the),33
+Polynesia,Oceania,Cook Islands (the),10
+Central America,Americas,Costa Rica,68
+Southern Europe,Europe,Croatia,30
+Caribbean,Americas,Cuba,76
+Western Asia,Asia,Cyprus,13
+Eastern Europe,Europe,Czech Republic (the),29
+Eastern Europe,Europe,Czechoslovakia,9
+Western Africa,Africa,Côte d’Ivoire,30
+Northern Europe,Europe,Denmark,16
+Eastern Africa,Africa,Djibouti,26
+Caribbean,Americas,Dominica,13
+Caribbean,Americas,Dominican Republic (the),76
+South America,Americas,Ecuador,95
+Northern Africa,Africa,Egypt,31
+Central America,Americas,El Salvador,66
+Middle Africa,Africa,Equatorial Guinea,1
+Eastern Africa,Africa,Eritrea,8
+Northern Europe,Europe,Estonia,4
+Eastern Africa,Africa,Ethiopia,116
+Melanesia,Oceania,Fiji,56
+Northern Europe,Europe,Finland,3
+Western Europe,Europe,France,173
+South America,Americas,French Guiana,3
+Polynesia,Oceania,French Polynesia,7
+Middle Africa,Africa,Gabon,13
+Western Africa,Africa,Gambia (the),30
+Western Asia,Asia,Georgia,25
+Western Europe,Europe,Germany,82
+Western Europe,Europe,Germany Dem Rep,3
+Western Europe,Europe,Germany Fed Rep,13
+Western Africa,Africa,Ghana,52
+Southern Europe,Europe,Greece,85
+Caribbean,Americas,Grenada,6
+Caribbean,Americas,Guadeloupe,13
+Micronesia,Oceania,Guam,9
+Central America,Americas,Guatemala,115
+Western Africa,Africa,Guinea,38
+Western Africa,Africa,Guinea-Bissau,22
+South America,Americas,Guyana,12
+Caribbean,Americas,Haiti,117
+Central America,Americas,Honduras,85
+Eastern Asia,Asia,Hong Kong,108
+Eastern Europe,Europe,Hungary,34
+Northern Europe,Europe,Iceland,13
+Southern Asia,Asia,India,658
+South-Eastern Asia,Asia,Indonesia,528
+Southern Asia,Asia,Iran (Islamic Republic of),205
+Western Asia,Asia,Iraq,23
+Northern Europe,Europe,Ireland,25
+Northern Europe,Europe,Isle of Man,1
+Western Asia,Asia,Israel,19
+Southern Europe,Europe,Italy,147
+Caribbean,Americas,Jamaica,37
+Eastern Asia,Asia,Japan,272
+Western Asia,Asia,Jordan,14
+Central Asia,Asia,Kazakhstan,25
+Eastern Africa,Africa,Kenya,119
+Micronesia,Oceania,Kiribati,6
+Eastern Asia,Asia,Korea (the Democratic People's Republic of),47
+Eastern Asia,Asia,Korea (the Republic of),107
+Western Asia,Asia,Kuwait,3
+Central Asia,Asia,Kyrgyzstan,31
+South-Eastern Asia,Asia,Lao People's Democratic Republic (the),51
+Northern Europe,Europe,Latvia,9
+Western Asia,Asia,Lebanon,12
+Southern Africa,Africa,Lesotho,24
+Western Africa,Africa,Liberia,24
+Northern Africa,Africa,Libya,3
+Northern Europe,Europe,Lithuania,14
+Western Europe,Europe,Luxembourg,13
+Eastern Asia,Asia,Macao,7
+Southern Europe,Europe,Macedonia (the former Yugoslav Republic of),24
+Eastern Africa,Africa,Madagascar,88
+Eastern Africa,Africa,Malawi,70
+South-Eastern Asia,Asia,Malaysia,93
+Southern Asia,Asia,Maldives,8
+Western Africa,Africa,Mali,57
+Micronesia,Oceania,Marshall Islands (the),7
+Caribbean,Americas,Martinique,14
+Western Africa,Africa,Mauritania,43
+Eastern Africa,Africa,Mauritius,21
+Central America,Americas,Mexico,262
+Micronesia,Oceania,Micronesia (Federated States of),11
+Eastern Europe,Europe,Moldova (the Republic of),16
+Eastern Asia,Asia,Mongolia,37
+Southern Europe,Europe,Montenegro,6
+Caribbean,Americas,Montserrat,7
+Northern Africa,Africa,Morocco,50
+Eastern Africa,Africa,Mozambique,115
+South-Eastern Asia,Asia,Myanmar,69
+Southern Africa,Africa,Namibia,32
+Southern Asia,Asia,Nepal,123
+Western Europe,Europe,Netherlands (the),39
+Caribbean,Americas,Netherlands Antilles,2
+Melanesia,Oceania,New Caledonia,11
+Australia and New Zealand,Oceania,New Zealand,72
+Central America,Americas,Nicaragua,77
+Western Africa,Africa,Niger (the),92
+Western Africa,Africa,Nigeria,136
+Polynesia,Oceania,Niue,3
+Micronesia,Oceania,Northern Mariana Islands (the),5
+Northern Europe,Europe,Norway,12
+Western Asia,Asia,Oman,16
+Southern Asia,Asia,Pakistan,213
+Micronesia,Oceania,Palau,5
+Western Asia,Asia,"Palestine, State of",9
+Central America,Americas,Panama,59
+Melanesia,Oceania,Papua New Guinea,84
+South America,Americas,Paraguay,56
+South America,Americas,Peru,178
+South-Eastern Asia,Asia,Philippines (the),612
+Eastern Europe,Europe,Poland,58
+Southern Europe,Europe,Portugal,46
+Caribbean,Americas,Puerto Rico,33
+Western Asia,Asia,Qatar,1
+Eastern Europe,Europe,Romania,92
+Eastern Europe,Europe,Russian Federation (the),173
+Eastern Africa,Africa,Rwanda,52
+Eastern Africa,Africa,Réunion,13
+Caribbean,Americas,Saint Barthélemy,1
+Western Africa,Africa,"Saint Helena, Ascension and Tristan da Cunha",1
+Caribbean,Americas,Saint Kitts and Nevis,8
+Caribbean,Americas,Saint Lucia,18
+Caribbean,Americas,Saint Martin (French Part),1
+Caribbean,Americas,Saint Vincent and the Grenadines,21
+Polynesia,Oceania,Samoa,13
+Middle Africa,Africa,Sao Tome and Principe,4
+Western Asia,Asia,Saudi Arabia,28
+Western Africa,Africa,Senegal,48
+Southern Europe,Europe,Serbia,27
+Southern Europe,Europe,Serbia Montenegro,16
+Eastern Africa,Africa,Seychelles,7
+Western Africa,Africa,Sierra Leone,32
+South-Eastern Asia,Asia,Singapore,4
+Caribbean,Americas,Sint Maarten (Dutch part),1
+Eastern Europe,Europe,Slovakia,23
+Southern Europe,Europe,Slovenia,10
+Melanesia,Oceania,Solomon Islands,34
+Eastern Africa,Africa,Somalia,97
+Southern Africa,Africa,South Africa,105
+Northern Africa,Africa,South Sudan,25
+Russian Federation,Europe,Soviet Union,47
+Southern Europe,Europe,Spain,98
+Southern Asia,Asia,Sri Lanka,113
+Northern Africa,Africa,Sudan (the),99
+South America,Americas,Suriname,3
+Southern Africa,Africa,Swaziland,18
+Northern Europe,Europe,Sweden,16
+Western Europe,Europe,Switzerland,58
+Western Asia,Asia,Syrian Arab Republic,15
+Eastern Asia,Asia,Taiwan (Province of China),94
+Central Asia,Asia,Tajikistan,74
+Eastern Africa,Africa,"Tanzania, United Republic of",110
+South-Eastern Asia,Asia,Thailand,155
+South-Eastern Asia,Asia,Timor-Leste,13
+Western Africa,Africa,Togo,28
+Polynesia,Oceania,Tokelau,3
+Polynesia,Oceania,Tonga,22
+Caribbean,Americas,Trinidad and Tobago,12
+Northern Africa,Africa,Tunisia,20
+Western Asia,Asia,Turkey,141
+Central Asia,Asia,Turkmenistan,2
+Caribbean,Americas,Turks and Caicos Islands (the),7
+Polynesia,Oceania,Tuvalu,9
+Eastern Africa,Africa,Uganda,100
+Eastern Europe,Europe,Ukraine,39
+Western Asia,Asia,United Arab Emirates (the),1
+Northern Europe,Europe,United Kingdom of Great Britain and Northern Ireland (the),94
+Northern America,Americas,United States of America (the),949
+South America,Americas,Uruguay,33
+Central Asia,Asia,Uzbekistan,9
+Melanesia,Oceania,Vanuatu,47
+South America,Americas,Venezuela (Bolivarian Republic of),56
+South-Eastern Asia,Asia,Viet Nam,241
+Caribbean,Americas,Virgin Island (British),4
+Caribbean,Americas,Virgin Island (U.S.),8
+Polynesia,Oceania,Wallis and Futuna,3
+Western Asia,Asia,Yemen,55
+Western Asia,Asia,Yemen Arab Rep,7
+Western Asia,Asia,Yemen P Dem Rep,7
+Southern Europe,Europe,Yugoslavia,15
+Eastern Africa,Africa,Zambia,50
+Eastern Africa,Africa,Zimbabwe,51
