@@ -83,6 +83,4 @@ From our analysis, several key insights emerged:
 
 By understanding these patterns and impacts, we can better prepare for future disasters and mitigate their effects on communities worldwide. This analysis serves as a foundation for further research and action in disaster management and preparedness.
 
-## Next Steps:
-To enhance our analysis, we recommend incorporating additional datasets such as climate data, socio-economic factors, and infrastructure resilience metrics. Future work could also focus on predictive modeling to forecast the likelihood and impact of various types of disasters.
 
