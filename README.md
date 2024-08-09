@@ -1,6 +1,8 @@
 
 # Analyzing Global Natural Disasters: A Historical Perspective
 
+![Natural Disaster](Image/Disaster-2023.jpg)
+
 ## Introduction:
 Our study aims to analyze global natural disasters, spanning several decades, to understand their frequency, impact, and distribution. By leveraging historical data on various types of disasters, we aim to draw insights that can aid in better preparedness and response strategies.
 
@@ -19,7 +21,7 @@ To ensure the dataset is ready for analysis, several steps were taken:
 * Columns such as 'Glide', 'Seq', 'Disaster Subtype', 'Event Name', etc., were removed because they were not necessary for the planned visualizations and analyses.
 
 2. **Handling Missing Values:**
-Missing values in 'Total Damages' and 'Total Effective' were converted to numeric, setting errors to NaN. This is crucial for performing any sum or aggregation operations on these columns.
+* Missing values in 'Total Damages' and 'Total Effective' were converted to numeric, setting errors to NaN. This is crucial for performing any sum or aggregation operations on these columns.
 
 3. **Converting Data Types:** 
 * Ensured that the 'Total Damages' and 'Total Effective' columns are numeric, which is essential for aggregation functions used in determining the most destructive disasters.
@@ -112,7 +114,7 @@ plt.show()
 ```
 
 ### 3. Impact Analysis:
-We analyzed the impact of these disasters in terms of total deaths and economic damages. Bar Charts were created to visualize the number of people affected and the total economic damage.
+* We analyzed the impact of these disasters in terms of total deaths and economic damages. Bar Charts were created to visualize the number of people affected and the total economic damage.
 
 ```python
 #which disaaster was most destructive (based on number of total effective and Total Damages )
