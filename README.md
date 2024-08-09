@@ -14,63 +14,142 @@ The dataset we are working with is a comprehensive collection of disaster events
 
 ## Data Cleaning and Preparation:
 To ensure the dataset is ready for analysis, several steps were taken:
-1. **Handling Missing Values:** We inspected columns with missing values and decided on appropriate strategies to handle them, such as filling missing values with the mean, median, or dropping rows/columns as necessary.
-2. **Converting Data Types:** Ensured that numerical columns are correctly typed and categorical columns are properly encoded.
-3. **Feature Engineering:** Created new features where necessary, such as calculating the economic impact per person affected.
+1. **Dropping Unnecessary Columns:** 
+* We removed columns that were not needed for the analysis. This helps focus on the relevant data and improves processing speed.
+* Columns such as 'Glide', 'Seq', 'Disaster Subtype', 'Event Name', etc., were removed because they were not necessary for the planned visualizations and analyses.
+
+2. **Handling Missing Values:**
+Missing values in 'Total Damages' and 'Total Effective' were converted to numeric, setting errors to NaN. This is crucial for performing any sum or aggregation operations on these columns.
+
+3. **Converting Data Types:** 
+* Ensured that the 'Total Damages' and 'Total Effective' columns are numeric, which is essential for aggregation functions used in determining the most destructive disasters.
+
+4. **Feature Engineering:** 
+* Created new features where necessary, such as 'Latitude' and 'Longitude' for geografical plotting.
+
+5. **Ensuring Data Integrity:**
+* Checking for any duplicates in the dataset that could skew the results, especially when counting occurrences of disasters.
+* Ensuring the consistency of categorical data, like the names of disasters, to avoid different labels for the same type of disaster.
+
 
 ## Exploratory Data Analysis:
 ### 1. Temporal Analysis:
-We started by analyzing the frequency of disasters over the years to understand trends and patterns. A line plot was created to visualize the number of disasters occurring each year.
+* We started by analyzing the total count by disater type over all decades. A Bar Chart was created to visualize the total number of each disater type.
 
 ```python
-import matplotlib.pyplot as plt
+# Plotting using matplotlib for each Disaster Type
+plt.barh(disaster_counts['Disaster Type'], disaster_counts['total'], color=plt.colormaps.get_cmap('viridis')(range(len(disaster_counts))))
+plt.xlabel('Total Disaster Count')
+plt.ylabel('Disaster Type')
+plt.title('Total Count by Disaster Type')
 
-# Plotting the number of disasters over the years
-plt.figure(figsize=(10, 6))
-data['Year'].value_counts().sort_index().plot(kind='line')
-plt.title('Number of Disasters Over the Years')
-plt.xlabel('Year')
-plt.ylabel('Number of Disasters')
+# Add text annotations for each bar
+for index, value in enumerate(disaster_counts['total']):
+    plt.text(value, index, str(value), ha='left', va='center', fontsize=8)
+
+# Save the figure
+plt.savefig("output_data/Fig1.png", bbox_inches='tight')
+
+# Show figure
 plt.show()
 ```
 
-### 2. Distribution of Disaster Types:
-Next, we examined the distribution of different types of disasters. A bar chart was created to show the frequency of each disaster type.
+## Next, we focus on the three most significant disasters.
+
+* and also plotting the frequency of disasters over the years to understand trends and patterns. A Cluster bar Chart was created to visualize the number of disasters occurring each year.
 
 ```python
-# Plotting the distribution of disaster types
-plt.figure(figsize=(12, 6))
-data['Disaster Type'].value_counts().plot(kind='bar')
-plt.title('Distribution of Disaster Types')
-plt.xlabel('Disaster Type')
-plt.ylabel('Frequency')
-plt.xticks(rotation=45)
+#plot a cluster bar chart over the years against count of disater with different colors in each column
+#which disaster was most frequent
+disaster_counts = clean_disaster_metadata.groupby(['Year', 'Disaster Type']).size().unstack(fill_value=0)
+
+# Plotting
+fig, ax = plt.subplots(figsize=(12, 7))
+
+# Create a stacked bar chart
+disaster_counts.plot(kind='bar', stacked=True, ax=ax, colormap='tab20')
+
+# Add labels and title
+ax.set_title('Disaster Counts Over the Years')
+ax.set_xlabel('Year')
+ax.set_ylabel('Number of Disasters')
+ax.legend(title='Disaster Type')
+ax.set_xticklabels(disaster_counts.index, rotation=90)
+
+# Save the figure
+plt.savefig("output_data/Fig2.png", bbox_inches='tight')
+
+# Show the plot
+plt.tight_layout()
+plt.show()
+```
+* We went further and check the frequency of disaster over the months
+
+### 2. Distribution of Disaster Types:
+* Next, we examined the distribution of different types of disasters in different Continents. A Line chart was created to show the frequency of disasters in continents.
+
+```python
+#plot line chart for total number of disasters over years against continents
+
+# Group by Year and Continent to get the total number of disasters
+disasters_per_year_continent = clean_disaster_metadata.groupby(['Year', 'Continent']).size().unstack(fill_value=0)
+
+# Plotting the data
+plt.figure(figsize=(12, 8))
+
+for continent in disasters_per_year_continent.columns:
+    plt.plot(disasters_per_year_continent.index, disasters_per_year_continent[continent], label=continent)
+
+plt.xlabel('Year')
+plt.ylabel('Total Number of Disasters')
+plt.title('Total Number of Disasters Over Years by Continent')
+plt.legend(title='Continent')
+plt.grid(True)
+
+# Save the figure
+plt.savefig("output_data/Fig3.png", bbox_inches='tight')
 plt.show()
 ```
 
 ### 3. Impact Analysis:
-We analyzed the impact of these disasters in terms of total deaths and economic damages. Scatter plots were created to visualize the relationship between the number of people affected and the total economic damage.
+We analyzed the impact of these disasters in terms of total deaths and economic damages. Bar Charts were created to visualize the number of people affected and the total economic damage.
 
 ```python
-# Scatter plot of total affected vs. total damages
-plt.figure(figsize=(10, 6))
-plt.scatter(data['Total Affected'], data['Total Damages ('000 US$)'])
-plt.title('Total Affected vs. Total Damages')
-plt.xlabel('Total Affected')
-plt.ylabel('Total Damages (000 US$)')
+#which disaaster was most destructive (based on number of total effective and Total Damages )
+selected_columns = ['Disaster Type', 'Total Affected', "Total Damages ('000 US$)"]
+
+# Filter the DataFrame to keep only the selected columns
+filtered_df = clean_disaster_metadata[selected_columns]
+
+# Drop rows with NaN values in the selected columns
+cleaned_df = filtered_df.dropna(subset=['Total Affected', "Total Damages ('000 US$)"])
+cleaned_df
+disaster_impact = cleaned_df.groupby('Disaster Type').agg({
+    'Total Affected': 'sum',
+    "Total Damages ('000 US$)": 'sum'
+}).reset_index()
+
+# Plotting Total Affected
+plt.figure(figsize=(12, 6))
+plt.bar(disaster_impact['Disaster Type'], disaster_impact['Total Affected'], color='blue')
+plt.xlabel('Disaster Type')
+plt.ylabel('Total Affected')
+plt.title('Total Affected by Disaster Type')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig("output_data/Fig8.png", bbox_inches='tight')
 plt.show()
-```
 
-### 4. Geographical Analysis:
-To understand the geographical distribution of disasters, we used latitude and longitude data to plot the locations of these events on a world map.
-
-```python
-import hvplot.pandas
-
-# Plotting geographical distribution of disasters
-data.hvplot.points('Longitude', 'Latitude', geo=True, tiles='OSM', 
-                   size='Total Deaths', color='Disaster Type', 
-                   hover_cols=['Disaster Type', 'Total Deaths', 'Total Damages (000 US$)'])
+# Plotting Total Damages
+plt.figure(figsize=(12, 6))
+plt.bar(disaster_impact['Disaster Type'], disaster_impact["Total Damages ('000 US$)"], color='coral')
+plt.xlabel('Disaster Type')
+plt.ylabel('Total Damages (\'000 US$)')
+plt.title('Total Damages by Disaster Type')
+plt.xticks(rotation=45)
+plt.tight_layout()
+plt.savefig("output_data/Fig9.png")
+plt.show()
 ```
 
 ## Conclusion:
