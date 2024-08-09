@@ -1,7 +1,7 @@
 
 # Analyzing Global Natural Disasters: A Historical Perspective
 
-![Natural Disaster](Image/Disaster-2023.jpg)
+![Natural Disaster](Images/Disaster-2023.jpg)
 
 ## Introduction:
 Our study aims to analyze global natural disasters, spanning several decades, to understand their frequency, impact, and distribution. By leveraging historical data on various types of disasters, we aim to draw insights that can aid in better preparedness and response strategies.
