@@ -1,15 +1,14 @@
 disaster_counts,Disaster Type,total
 5,Flood,5272
-11,Storm,4005
+10,Storm,4005
 3,Epidemic,1436
 2,Earthquake,1137
-9,Landslide,713
+8,Landslide,713
 1,Drought,685
 4,Extreme temperature ,584
-13,Wildfire,452
-12,Volcanic activity,222
-8,Insect infestation,93
-10,Mass movement (dry),41
+12,Wildfire,452
+11,Volcanic activity,222
+7,Insect infestation,93
+9,Mass movement (dry),41
 6,Glacial lake outburst,2
 0,Animal accident,1
-7,Impact,1
