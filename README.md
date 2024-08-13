@@ -14,6 +14,9 @@ The dataset we are working with is a comprehensive collection of disaster events
 - **Total Damages ('000 US$):** Economic impact measured in thousands of US dollars.
 - **Total Affected:** Number of people affected by the disaster.
 
+## Technology: 
+* We applied Python libraries such as Pandas for data manipulation, Matplotlib for visualizations, and hvPlot for interactive plotting. Also, we used the Geoapify API key for geocoding to improve our geographic analysis.
+
 ## Data Cleaning and Preparation:
 To ensure the dataset is ready for analysis, several steps were taken:
 1. **Dropping Unnecessary Columns:** 
